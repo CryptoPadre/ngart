@@ -1,0 +1,16 @@
+.NavBar {
+    background-color: #3b3b3b !important;
+}
+
+.NavLink {
+    font-size: xx-large;
+    color: #bfa5a0;
+}
+
+i {
+    color: #bfa5a0;
+}
+
+i:hover {
+    color: #f7f5f2;
+}
