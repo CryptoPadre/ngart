@@ -1,4 +1,19 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  font-family: Playfair Display, sans-serif;
-  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+/* This wraps the dynamic page content */
+.MainContent {
+  padding-top: 55px;   /* height of fixed NavBar */
+  padding-bottom: 80px; /* height of fixed Footer */
+  flex: 1;
 }

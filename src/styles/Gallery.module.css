@@ -1,0 +1,70 @@
+#wrapper {
+    
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+   
+    width: 50%;
+    height: 50%;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,.3);
+    transform: rotate(-2deg); 
+    border: 10px solid #fff;
+  }
+  
+  /********BACKGROUND********/
+  .background, .dust, .foreground, .midground  {
+    position: absolute;
+    left: -55px;
+    z-index: 1;
+    animation-name: background;
+    animation-duration: 60s;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  
+  
+  @keyframes background {
+    0% {transform:translateX(0px) translateY(0px);}
+    100% {transform:translateX(10px) translateY(-190px);}
+  
+  }
+    
+    
+  /********FOREGROUND********/  
+    .foreground {
+    z-index: 3;
+    -moz-animation-name: foreground;
+    -ms-animation-name: foreground;
+    -o-animation-name: foreground;
+    -webkit-animation-name: foreground;
+    animation-name: foreground;
+  }
+  
+  @keyframes foreground { 
+    0% { transform: scale(1); }
+    100% { transform: scale(1) translateX(-300px); filter: blur(1px); }
+  }
+  
+  
+  /********MIDGROUND********/
+  .midground {
+    z-index:2;
+    -moz-animation-name: midground;
+    -ms-animation-name: midground;
+    -o-animation-name: midground;
+    -webkit-animation-name: midground;
+    animation-name: midground;
+  }
+  
+  @keyframes midground { 
+    0% { transform: scale(1); }
+    100% { transform: scale(1.4) translateX(-100px) translateY(0px) rotate(5deg); }
+  }
+  
+  
+
+  
+  
+  
+  

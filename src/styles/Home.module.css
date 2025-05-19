@@ -1,0 +1,22 @@
+.Hero {
+    font-size: x-large;
+    text-align: center;
+  
+}
+
+.Bg {
+    /* background-image: url("../assets/CVOM7371.jpeg") !important;
+    background-size: cover;
+    background-position: center;
+    height: 75vh; 
+   */
+}
+
+.Intro {
+    margin-top: 200px;
+    font-style: italic;
+}
+
+.Name {
+    font-size: 300%;
+}
