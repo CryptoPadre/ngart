@@ -1,7 +1,7 @@
 {
   "name": "ngart",
   "version": "0.1.0",
-  "homepage": "https://cryptopadre.github.io/ngart",
+  "homepage": "https://CryptoPadre.github.io/ngart",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
