@@ -4,6 +4,7 @@ import Panther from "../assets/panther.png";
 export default function Home() {
   return (
     <>
+    <div className={styles.Wrapper}>
       <div className={styles.TextBlock}>
         <h1 className={`text-center ${styles.Name}`}>Niki Gavlider</h1>
 
@@ -11,6 +12,7 @@ export default function Home() {
       </div>
       <div className={styles.background}>
         <img alt="panther" src={Panther} />
+      </div>
       </div>
     </>
   );

@@ -34,16 +34,7 @@
     color: #3b3b3b;
     font-family: "Dancing Script", cursive;
 }
-
-#wrapper {
-
-    margin-right: auto;
-    position: relative;
-    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, .3);
-    transform: rotate(-2deg);
-    border: 10px solid #fff;
-  }
-  
+ 
   .background img {
     width: 100%;
     object-fit: cover;
@@ -131,4 +122,42 @@
       transform: translateX(-20%) translateY(55%);
     }
 }
+}
+
+@media screen and (min-width: 990px) {
+  .background img {
+    width: 80%;
+    max-height: 70vh;
+  }
+  .background {
+    animation: background 10s infinite alternate;
+  }
+  @keyframes background {
+    0% {
+      transform: translateX(-40%) translateY(0px);
+    }
+
+    100% {
+      transform: translateX(271%) translateY(0px);
+    }
+  
+}
+.Name {
+  font-size: 250%;
+}
+.Word {
+  font-size: 200%;
+
+}
+.TextBlock {
+  padding-top: 45%;
+  animation: none !important;
+  padding-top: 5%;
+}
+.Wrapper {
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, .3);
+  transform: rotate(-2deg);
+  background-color: #bfa5a0;
+}
+
 }
