@@ -44,14 +44,12 @@
     border: 10px solid #fff;
   }
   
-  .background img,
-  .foreground img {
+  .background img {
     width: 100%;
     object-fit: cover;
   }
   /********BACKGROUND********/
-  .background,
-  .foreground {
+  .background {
     position: absolute;
     z-index: 1;
     animation-name: background;
@@ -115,5 +113,22 @@
 }
 
 @media screen and (min-width: 750px) {
-
+  @keyframes background {
+    0% {
+        transform: translateX(0px) translateY(0px);
+      }
+    
+      100% {
+        transform: translateX(50px) translateY(-60%);
+      }
+}
+@keyframes Word {
+  0% {
+      transform: translateX(0px) translateY(-70%);
+    }
+  
+    100% {
+      transform: translateX(-20%) translateY(55%);
+    }
+}
 }
