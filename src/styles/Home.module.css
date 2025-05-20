@@ -1,62 +1,31 @@
-.Hero {
-    font-size: x-large;
-    text-align: center;
-  
+
+.TextBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  padding-top: 60%; /* controls distance from top */
+  animation-name: Word;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 
-.Bg {
-    /* background-image: url("../assets/CVOM7371.jpeg") !important;
-    background-size: cover;
-    background-position: center;
-    height: 75vh; 
-   */
+.Word {
+  font-family: "Dancing Script", cursive;
+  font-style: italic;
+  color: #3b3b3b;
 }
 
-.Word1 {
-    font-family: "Dancing Script", cursive;
-    margin-top: 200px;
-    right: 75px;
-    color: #3b3b3b;
-    font-style: italic;
-    position: relative;
-    z-index: 10;
-    animation-name: Word1;
-    animation-duration: 20s;
-    animation-delay: 0ms;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}
-
-@keyframes Word1 {
+@keyframes Word {
     0% {
-        transform: translateX(0px) translateY(0px);
+        transform: translateX(0px) translateY(-70%);
       }
     
       100% {
-        transform: translateX(130px) translateY(120px);
-      }
-}
-
-.Word2 {
-    font-family: "Dancing Script", cursive;
-    position: relative;
-    color: #3b3b3b;
-    left: 110%;
-    z-index: 10;
-    animation-name: Word2;
-    animation-duration: 20s;
-    animation-delay: 0ms;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}
-
-@keyframes Word2 {
-    0% {
-        transform: translateX(0px) translateY(0px);
-      }
-    
-      100% {
-        transform: translateX(-270px) translateY(95px);
+        transform: translateX(0px) translateY(70%);
       }
 }
 
@@ -99,7 +68,7 @@
       }
     
       100% {
-        transform: translateX(0px) translateY(-415px);
+        transform: translateX(0px) translateY(-70%);
       }
 }
   
