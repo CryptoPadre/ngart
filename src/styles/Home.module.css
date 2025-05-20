@@ -15,9 +15,10 @@
 .Word1 {
     font-family: "Dancing Script", cursive;
     margin-top: 200px;
-    color: #3b3b3b;
+    color: #f7f5f2;
     font-style: italic;
     position: relative;
+    z-index: 10;
     animation-name: Word1;
     animation-duration: 30s;
     animation-delay: 0ms;
@@ -31,15 +32,16 @@
       }
     
       100% {
-        transform: translateX(90px) translateY(320px);
+        transform: translateX(90px) translateY(170px);
       }
 }
 
 .Word2 {
     font-family: "Dancing Script", cursive;
     position: relative;
-    color: #3b3b3b;
+    color: #f7f5f2;
     left: 80%;
+    z-index: 10;
     animation-name: Word2;
     animation-duration: 30s;
     animation-delay: 0ms;
@@ -53,7 +55,7 @@
       }
     
       100% {
-        transform: translateX(-70px) translateY(185px);
+        transform: translateX(-70px) translateY(60px);
       }
 }
 
