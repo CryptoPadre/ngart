@@ -28,10 +28,11 @@ export default function Home() {
       </Container>
       <div className={styles.Bg}>
         <div id="wrapper">
+          {/*
           <div className={styles.foreground}>
             <img src={Whale} alt="whale" />
           </div>
-
+   */}
           <div className={styles.background}>
             <img alt="panther" src={Panther} />
           </div>

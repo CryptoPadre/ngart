@@ -15,12 +15,13 @@
 .Word1 {
     font-family: "Dancing Script", cursive;
     margin-top: 200px;
-    color: #f7f5f2;
+    right: 75px;
+    color: #3b3b3b;
     font-style: italic;
     position: relative;
     z-index: 10;
     animation-name: Word1;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-delay: 0ms;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -32,18 +33,18 @@
       }
     
       100% {
-        transform: translateX(90px) translateY(170px);
+        transform: translateX(130px) translateY(120px);
       }
 }
 
 .Word2 {
     font-family: "Dancing Script", cursive;
     position: relative;
-    color: #f7f5f2;
-    left: 80%;
+    color: #3b3b3b;
+    left: 110%;
     z-index: 10;
     animation-name: Word2;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-delay: 0ms;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -55,7 +56,7 @@
       }
     
       100% {
-        transform: translateX(-70px) translateY(60px);
+        transform: translateX(-270px) translateY(95px);
       }
 }
 
@@ -85,7 +86,7 @@
     position: absolute;
     z-index: 1;
     animation-name: background;
-    animation-duration: 40s;
+    animation-duration: 20s;
     animation-delay: 0ms;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -98,12 +99,12 @@
       }
     
       100% {
-        transform: translateX(0px) translateY(-420px);
+        transform: translateX(0px) translateY(-415px);
       }
 }
   
-  
-  /********FOREGROUND********/
+  /*
+  Foreground
   .foreground {
     width: 100%;
     z-index: 2;
@@ -125,4 +126,5 @@
     filter: blur(1px);
   }
 }
+  */
   
