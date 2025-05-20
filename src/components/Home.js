@@ -1,6 +1,4 @@
-import { Row, Container, Col } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
-import Whale from "../assets/whale.png";
 import Panther from "../assets/panther.png";
 
 export default function Home() {
