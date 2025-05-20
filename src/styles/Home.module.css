@@ -12,11 +12,117 @@
    */
 }
 
-.Intro {
+.Word1 {
+    font-family: "Dancing Script", cursive;
     margin-top: 200px;
+    color: #3b3b3b;
     font-style: italic;
+    position: relative;
+    top: 350px;
+    animation-name: Word1;
+    animation-duration: 30s;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes Word1 {
+    0% {
+        transform: translateX(-200px) translateY(0px);
+      }
+    
+      100% {
+        transform: translateX(100px) translateY(0px);
+      }
+}
+
+.Word2 {
+    font-family: "Dancing Script", cursive;
+    position: relative;
+    color: #3b3b3b;
+    left: 80%;
+    top: 270px;
+    animation-name: Word2;
+    animation-duration: 30s;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes Word2 {
+    0% {
+        transform: translateX(200px) translateY(0px);
+      }
+    
+      100% {
+        transform: translateX(-170px) translateY(55px);
+      }
 }
 
 .Name {
     font-size: 300%;
+    color: #3b3b3b;
+    font-family: "Dancing Script", cursive;
 }
+
+#wrapper {
+
+    margin-right: auto;
+    position: relative;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, .3);
+    transform: rotate(-2deg);
+    border: 10px solid #fff;
+  }
+  
+  .background img,
+  .foreground img {
+    width: 100%;
+    object-fit: cover;
+  }
+  /********BACKGROUND********/
+  .background,
+  .foreground {
+    position: absolute;
+    z-index: 1;
+    animation-name: background;
+    animation-duration: 40s;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  
+  
+  @keyframes background {
+    0% {
+        transform: translateX(0px) translateY(0px);
+      }
+    
+      100% {
+        transform: translateX(0px) translateY(-420px);
+      }
+}
+  
+  
+  /********FOREGROUND********/
+  .foreground {
+    width: 100%;
+    z-index: 2;
+    -moz-animation-name: foreground;
+    -ms-animation-name: foreground;
+    -o-animation-name: foreground;
+    -webkit-animation-name: foreground;
+    animation-name: foreground;
+  }
+  
+
+@keyframes foreground {
+  0% {
+    transform: scale(1) translateX(-40px) translateY(40px);
+  }
+
+  100% {
+    transform: scale(3) translateX(-90px) translateY(-50px);
+    filter: blur(1px);
+  }
+}
+  
