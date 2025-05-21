@@ -1,0 +1,13 @@
+.Button {
+    margin-top: 20px;
+    border: 2px solid #bfa5a0;
+    background-color: white;
+}
+
+.Button:hover{
+    color: #bfa5a0;
+}
+
+.Text {
+    margin-top: 5%;
+}
