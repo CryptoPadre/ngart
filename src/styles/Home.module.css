@@ -156,7 +156,6 @@
 }
 .Wrapper {
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, .3);
-  transform: rotate(-2deg);
   background-color: #bfa5a0;
 }
 

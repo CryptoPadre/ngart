@@ -8,17 +8,18 @@ import styles from '../styles/Gallery.module.css'
 export default function Gallery(){
     return (
         <Container>
-      <Row >
-        <Col xs={8} md={6} lg={6}>
+      <Row className='justify-content-center'>
+        <Col xs={8} md={6} lg={6} className={styles.Col}>
+          <Image  src={Frida} thumbnail />
+          <p className='text-center'>Price</p>
+        </Col>
+        <Col xs={8} md={6} lg={6} className={styles.Col}>
           <Image  src={Frida} thumbnail />
         </Col>
-        <Col xs={8} md={6} lg={6}>
+        <Col xs={8} md={6} lg={6} className={styles.Col}>
           <Image  src={Frida} thumbnail />
         </Col>
-        <Col xs={8} md={6} lg={6}>
-          <Image  src={Frida} thumbnail />
-        </Col>
-        <Col xs={8} md={6} lg={6}>
+        <Col xs={8} md={6} lg={6} className={styles.Col}>
           <Image  src={Frida} thumbnail />
         </Col>
       </Row>
