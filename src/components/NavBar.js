@@ -28,16 +28,16 @@ export default function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link as={NavLink} to="/" end>
-                <i className="fa-solid fa-house"></i>
+                <i className="fa-solid fa-house">Home</i>
               </Nav.Link>
               <Nav.Link as={NavLink} to="/gallery">
-                <i className="fa-solid fa-palette"></i>
+                <i className="fa-solid fa-palette">Gallery</i>
               </Nav.Link>
               <Nav.Link as={NavLink} to="/about">
-                <i className="fa-solid fa-address-card"></i>
+                <i className="fa-solid fa-address-card">About Me</i>
               </Nav.Link>
               <Nav.Link as={NavLink} to="/contact">
-                <i className="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope">Contact</i>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
