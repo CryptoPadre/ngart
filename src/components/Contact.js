@@ -5,7 +5,7 @@ import styles from "../styles/Contact.module.css";
 export default function ContactForm() {
   const [state, handleSubmit] = useForm(process.env.REACT_APP_FORMSPREE_ID);
   if (state.succeeded) {
-    return <p>Thanks for reaching out! I’ll get back to you soon.</p>;
+    return <p className={`text-center ${styles.Text}`}>Thanks for reaching out! I’ll get back to you soon.</p>;
   }
   return (
     <>
