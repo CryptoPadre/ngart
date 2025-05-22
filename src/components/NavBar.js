@@ -21,10 +21,11 @@ export default function NavBar() {
             NGArt
           </Navbar.Brand>
           <Navbar.Toggle
+          className={styles.Hamburger}
             aria-controls="basic-navbar-nav"
             ref={ref}
             onClick={() => setExpanded(!expanded)}
-          />
+          > <i className="fa-solid fa-bars"></i></Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link as={NavLink} to="/" end>

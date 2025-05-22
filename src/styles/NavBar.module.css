@@ -15,3 +15,13 @@ i {
 i:hover {
     color: #f7f5f2;
 }
+
+  /* Add a hamburger icon manually */
+.Hamburger {
+    border: #bfa5a0  1px solid;
+    color: #bfa5a0 !important;
+}
+
+.Hamburger::after {
+    border-color: #bfa5a0;
+}
