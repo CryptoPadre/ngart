@@ -19,12 +19,20 @@ export default function Home() {
         <p className={`text-center ${styles.Word}`}>Artist by Heart & Soul</p>
       </div>
       <div className={styles.background}>
-      <img
-            alt="panther"
-            src={Panther}
-            onLoad={handleImageLoad}
-            style={loading ? { display: <Spinner animation="grow"/> } : {}}
-          />
+      {loading && (
+          <div
+            className="d-flex justify-content-center align-items-center"
+            style={{ height: "200px" }}
+          >
+            <Spinner animation="grow" variant="primary" />
+          </div>
+        )}
+        <img
+          alt="panther"
+          src={Panther}
+          onLoad={handleImageLoad}
+          style={{ display: loading ? "none" : "block" }}
+        />
       </div>
       </div>
     </>
